@@ -16,7 +16,7 @@
   <body>
 <Section id="userGoal">
 <div class="bg-green-500 mt-16 mx-20 h-24">
-      <h1 class=" text-center text-white font-bold py-6 text-2xl">Vie Course Goals</h1>
+      <h1 class=" text-center text-white font-bold py-6 text-2xl">Vue Course Goals</h1>
 </div>
 
 <div class="mt-10 shadow-2xl border border-4 bg-white mx-20">
@@ -28,7 +28,7 @@
       <button class="bg-indigo-800 text-white  px-3 py-1 rounded" @click="addGoal()" > add Goal</button>
 </div>
 <div class=" text-center">
-      <p v-if="goals.length===0">No goal has Been Set-please add goals</p>
+      <p v-if="goals.length===0">No goal have Been Set please add goals</p>
 <ul class="mt-2" v-else>
       <li class="bg-green-500 text-white px-20 py-3 mx-4 rounded mt-6" v-for="(goal,index) in goals">{{goal}}
             <button class=" ml-20 ml-96 " @click="removeGoal(index)">
